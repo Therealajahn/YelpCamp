@@ -15,21 +15,25 @@ My version of Colt Steel's YelpCamp, a project from his 2021 Udemy course.
   `const express = require("express");`  
   
  Define express as app
-   `const app = express();`
+   `const app = express();`  
+   
  Define path  
-  `const path = require("path");`
+  `const path = require("path");`  
+  
  Set Template engine 
-  `app.set("view engine", "ejs");`
+  `app.set("view engine", "ejs");`  
+  
  Join Absolute File Url (__dirname) to "views" to get Embeddeed Javascript Template   
-  `app.set("views", path.join(__dirname, "views"));`
-
-app.get("/", (req, res) => {
-  res.render("home");
-});
-
-app.listen(3000, () => {
-  console.log("Serving on port 3000");
-});
+  `app.set("views", path.join(__dirname, "views"));`  
+ 
+ Route GET request to root URL of app  
+  `app.get("/", (req, res) => {
+   res.render("home");
+  });`
+ Assign app to port 3000 and log a message to confirm the app is working 
+  `app.listen(3000, () => {
+     console.log("Serving on port 3000");
+   });`
  
  
  
