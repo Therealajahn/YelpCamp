@@ -3,13 +3,17 @@ My version of Colt Steel's YelpCamp, a project from his 2021 Udemy course.
 
 # Step 1: Creating a basic Express App
  Initialize file with a package.json
- `npm init`
+ `npm init`  
+ 
  Install express, mongoose, and ejs
- `npm i express mongoose ejs`
+ `npm i express mongoose ejs`  
+ 
  Add app.js file to project
- `touch app.js`
+ `touch app.js`  
+ 
  In app.js include express
-  `const express = require("express");`
+  `const express = require("express");`  
+  
  Define express as app
    `const app = express();`
  Define path  
