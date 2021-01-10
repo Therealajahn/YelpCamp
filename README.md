@@ -29,7 +29,8 @@ My version of Colt Steel's YelpCamp, a project from his 2021 Udemy course.
  Route GET request to root URL of app  
   `app.get("/", (req, res) => {
    res.render("home");
-  });`
+  });`  
+  
  Assign app to port 3000 and log a message to confirm the app is working 
   `app.listen(3000, () => {
      console.log("Serving on port 3000");
